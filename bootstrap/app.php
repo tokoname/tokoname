@@ -4,13 +4,13 @@
 session_start();
 
 // Require autoloader.
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
 // Attempt to load the .env file.
 try {
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__.'/../');
     $dotenv->load();
-} catch(\Dotenv\Exception\InvalidPathException $e) {
+} catch (\Dotenv\Exception\InvalidPathException $e) {
     var_dump('Unable to load .env');
 }
 
