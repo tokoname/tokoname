@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Tokoname\\": "app"
+    }
+  },
+  "require": {
+    "vlucas/phpdotenv": "^5.1"
+  }
+}
